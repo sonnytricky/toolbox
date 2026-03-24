@@ -4,6 +4,7 @@ about: Allgemeine Aufgabe
 title: "Task: "
 labels:
   - TODO
+projects: @sonnytricky's toolbox
 ---
 
 ## Aufgabe

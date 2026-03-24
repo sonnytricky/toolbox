@@ -5,11 +5,9 @@ title: []  # z.B."Home Assistant: - "
 labels: 
   - Features  # # automatisch gesetztes Label. Mehrere Labels einfrach die Liste unten weiterführen
 assignees: []  # standardmäßig niemand zugewiesen ('').
-# projects:  # wird nur in Github unterstütz
-#  - Template  # MeinProjekt
+projects: @sonnytricky's toolbox
 # milestone: []  # kein Meilenstein wird eingetragen   # wird nur in Github unterstütz
-# repository:     # wird nur in Github unterstütz
-# repository_url:   # wird nur in Github unterstütz
+
 ---
 # Beschreibung der Funktion
 Bitte beschreibe hier die gewünschte Funktion so detailliert wie möglich.
