@@ -1,0 +1,5 @@
+extends: default
+rules:
+  line-length: disable          # ignoriert Zeilenlängen
+  new-line-at-end-of-file: disable  # ignoriert fehlende neue Zeile am Ende
+  truthy: disable               # ignoriert Wahrheitswerte-Warnungen
