@@ -15,6 +15,20 @@ Dieses Bash-Skript automatisiert die Grundinstallation und Konfiguration eines L
 
 ---
 
+## Verwendung:
+
+1. Skript herunterladen
+```bash
+wget https://raw.githubusercontent.com/sonnytricky/toolbox/refs/heads/dev/scripts/Universal-script/universal-install.sh
+```
+
+2. Skript ausführen:
+```bash
+bash universal-install.sh
+```
+
+---
+
 ### 💻 Desktop-Modus
 
 Installiert zusätzliche Desktop-Programme:

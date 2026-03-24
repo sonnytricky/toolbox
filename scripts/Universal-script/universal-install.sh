@@ -107,8 +107,6 @@ if [[ "$mode" == "1" ]]; then
     if [[ "$install_portainer" =~ ^[Yy]$ ]]; then
       mkdir -p /opt/portainer
       cat > /opt/portainer/docker-compose.yml" <<EOF
-version: '3.8'
-
 services:
   portainer:
     image: portainer/portainer-ce
