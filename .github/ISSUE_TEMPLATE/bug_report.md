@@ -4,7 +4,7 @@ about: Melde einen Fehler
 labels: 
   - bug
 assignees: []
-projects: sonnytricky's toolbox
+projects: toolbox
 ---
 
 # Beschreibung
