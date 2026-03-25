@@ -46,10 +46,9 @@
 !/.github/workflows/Demo.yaml
 !/.github/workflows/lint.yml
 !/.github/PULL_REQUEST_TEMPLATE.md
-!/.images/templates.png
-!/.images/example.png
-!/scripts/Universal-script/universal-install.sh
-!/scripts/Universal-script/README.md
+!/.images/logo.png
+!/scripts/Universelles-Linux-Skript/install.sh
+!/scripts/Universelles-Linux-Skript/README.md
 !/.gitattributes
 !/.gitignore
 # WICHTIG: .yamllint <-> ignoriert Fehler für Stil
