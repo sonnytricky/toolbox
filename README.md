@@ -1,9 +1,5 @@
 # toolbox
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dev
 <p align="center">
   <img src=".images/logo.png"
        alt="Ein Bild"
