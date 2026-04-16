@@ -4,13 +4,16 @@ set -e
 
 #########################################
 #
-# Version 1.0.2-dev
+# Version 1.0.3-dev
 #
 #########################################
 #
 # Copyright (c) 2026 sonnytricky
 #
 #########################################
+
+# Variablen
+username=""
 
 echo "Wählen Sie den Installationsmodus:"
 echo "1) Server"
@@ -28,7 +31,8 @@ apt update && apt upgrade -y
 echo "Benötigte Grundpakete werden installiert..."
 apt install -y locales curl nano wget sudo gnupg lsb-release ca-certificates
 
-dpkg-reconfigure tzdata
+# dpkg-reconfigure tzdata
+DEBIAN_FRONTEND=noninteractive dpkg-reconfigure tzdata
 
 dpkg-reconfigure --frontend=noninteractive locales
 echo -e "LANG=de_DE.UTF-8\nLANGUAGE=\"de_DE:de\"" > /etc/default/locale
@@ -71,7 +75,7 @@ fi
 # Je nach Modus verschiedene Pakete installieren
 if [[ "$mode" == "1" ]]; then
   # Server Pakete
-  SERVER_PACKAGES=(git htop curl wget ssh)
+  SERVER_PACKAGES=(git htop curl wget openssh-server)
 
   echo "Server-Basis-Pakete werden installiert..."
   apt install -y "${SERVER_PACKAGES[@]}"
@@ -123,10 +127,10 @@ volumes:
 EOF
 
       echo "Die compose.yml für Portainer wird nun mit nano geöffnet. Sie können sie bei Bedarf anpassen."
-      nano /opt/portainer/docker-compose.yml"
+      nano /opt/portainer/docker-compose.yml
 
       echo "Starte Portainer mit docker compose..."
-      docker compose -f /opt/portainer/docker compose.yml up -d
+      docker compose -f /opt/portainer/docker-compose.yml up -d
 
       echo "Portainer wurde gestartet."
     fi
