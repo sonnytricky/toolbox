@@ -12,13 +12,30 @@
 ## Verwendung (Beispiel):
 
 1. Skript herunterladen
+
 ```bash
-wget https://raw.githubusercontent.com/sonnytricky/toolbox/refs/heads/dev/scripts/Universal-script/universal-install.sh
+wget https://raw.githubusercontent.com/sonnytricky/toolbox/refs/heads/main/scripts/Universelles-Linux-Skript/install.sh
 ```
 
-2. Skript ausführen:
+2. Srkipt ausführbar machen
+
 ```bash
-bash universal-install.sh
+chmod +x install.sh
+```
+oder 
+
+```bash
+sudo chmod +x install.sh
+```
+3. Skript ausführen:
+```bash
+./install.sh
+```
+
+oder
+
+```bash
+sudo ./install.sh
 ```
 
 ---
