@@ -20,7 +20,7 @@ Dieses Bash-Skript automatisiert die Grundinstallation und Konfiguration eines L
 Installiert zusätzliche Desktop-Programme:
 
 * `git`, `htop`, `curl`, `wget`
-* `okular`, `spektacle`, `gwenview` (Bild-/PDF-Anzeige & Screenshot)
+* `okular`, `KDE-spectacle`, `gwenview` (Bild-/PDF-Anzeige & Screenshot)
 * `fish` (alternativer Shell)
 * `gparted` (Partitionierung)
 * `ark`, `zip`, `tar`, `gzip`, `bzip2`, `unzip` (Archivtools)
@@ -34,7 +34,7 @@ Installiert zusätzliche Desktop-Programme:
 
 Installiert minimale Serverpakete:
 
-* `git`, `htop`, `curl`, `wget`, `ssh`
+* `git`, `htop`, `curl`, `wget`, `openssh-server`
 
 Optional:
 
