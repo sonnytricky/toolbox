@@ -4,7 +4,7 @@ set -e
 
 #########################################
 #
-# Version 1.0-dev
+# Version 1.0.1-dev
 #
 #########################################
 #
@@ -145,7 +145,7 @@ EOF
 
 elif [[ "$mode" == "2" ]]; then
   # Desktop Pakete
-  DESKTOP_PACKAGES=(git htop curl wget okular spektacle fish gparted ark cifs-utils gwenview cups bzip2 gzip tar unzip zip synaptic)
+  DESKTOP_PACKAGES=(git htop curl wget okular kde-spectacle fish gparted ark cifs-utils gwenview cups bzip2 gzip tar unzip zip synaptic)
 
   echo "Desktop-Pakete werden installiert..."
   apt install -y "${DESKTOP_PACKAGES[@]}"
