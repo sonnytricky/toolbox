@@ -4,7 +4,7 @@ set -e
 
 #########################################
 #
-# Version 1.0.1-dev
+# Version 1.0.2-dev
 #
 #########################################
 #
@@ -106,7 +106,7 @@ if [[ "$mode" == "1" ]]; then
     read -rp "Möchten Sie Portainer zur Docker-Verwaltung installieren? (y/n): " install_portainer
     if [[ "$install_portainer" =~ ^[Yy]$ ]]; then
       mkdir -p /opt/portainer
-      cat > /opt/portainer/docker-compose.yml" <<EOF
+      cat > /opt/portainer/docker-compose.yml <<EOF
 services:
   portainer:
     image: portainer/portainer-ce
