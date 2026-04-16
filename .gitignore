@@ -1,0 +1,60 @@
+##############################################
+# Alles ignorieren                               # * bedeutet alles
+##############################################
+*
+
+##############################################
+# Verzeichnisse wieder erlauben
+##############################################
+!*/
+
+##############################################
+# Ordner ignorieren
+##############################################
+# /.Releases/
+# *.Releases/
+# !*/.Releases/
+# /.aLT/
+# *.aLT/
+# !*/.aLT/
+
+##############################################
+# Verzeichnisse wieder erlauben                  # !*/Unterordner/
+##############################################
+!*/.docs/
+!*/.github/ISSUE_TEMPLATE/
+!*/.github/workflows/
+!*/.images/
+!*/scripts/Universelles-Linux-Skript/
+
+
+##############################################
+# Ausnahme: diese Dateien NICHT ignorieren
+##############################################
+# Beispiel:
+# - für Dateien in Unterordnern                  # !/Pfad/zur/Datein.txt
+# - für einzelne Dateien                         # !Datein.txt
+##############################################
+!/.docs/architecture.md
+!/.docs/projektvision.md
+!/.gitea/workflows/lint.yml
+!/.gitea/PULL_REQUEST_TEMPLATE.md
+!/.github/ISSUE_TEMPLATE/bug_report.md
+!/.github/ISSUE_TEMPLATE/feature_request.md
+!/.github/ISSUE_TEMPLATE/idea.md
+!/.github/ISSUE_TEMPLATE/task.md
+!/.github/workflows/Demo.yaml
+!/.github/workflows/lint.yml
+!/.github/PULL_REQUEST_TEMPLATE.md
+!/.images/logo.png
+!/scripts/Universelles-Linux-Skript/install.sh
+!/scripts/Universelles-Linux-Skript/README.md
+!/.gitattributes
+!/.gitignore
+# WICHTIG: .yamllint <-> ignoriert Fehler für Stil
+!/.yamllint
+!/CODE_OF_CONDUCT.md
+!/CONTRIBUTING.md
+!/LICENSE
+!/README.md
+
